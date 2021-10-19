@@ -1,0 +1,150 @@
+@import './helpers/transitions.scss';
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-Regular.ttf');
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Nunito'!important;
+	background-color: #F4F6F9;
+    overflow-x: hidden;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Admin LTE Customization */
+.sidebar {
+    overflow-x: hidden !important;
+}
+
+.sidebar-dark-maroon .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-maroon .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #212529;
+}
+
+
+@media screen and (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
+        margin-left: 0;
+        width: 5rem;
+    }
+    .sidebar-mini.sidebar-collapse.layout-fixed .brand-link {
+        width: 5rem;
+    }
+}
+
+/* Modern Scrollbar */
+html::-webkit-scrollbar {
+    width: 6px !important;
+}
+html::-webkit-scrollbar-track {
+    background: 8497bf !important;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #777 !important;
+    border-radius: 10px !important;
+    border: 3px solid transparent !important;
+}
+
+/* Modern Scrollbar - Sidebar*/
+.sidebar::-webkit-scrollbar {
+    width: 6px !important;
+}
+.sidebar::-webkit-scrollbar-track {
+    background: 8497bf !important;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #777 !important;
+    border-radius: 10px !important;
+    border: 3px solid transparent !important;
+}
+
+/* Modern Scrollbar - Sidebar*/
+tbody::-webkit-scrollbar {
+    width: 6px !important;
+}
+tbody::-webkit-scrollbar-track {
+    background: 8497bf !important;
+}
+tbody::-webkit-scrollbar-thumb {
+    background-color: #777 !important;
+    border-radius: 10px !important;
+    border: 3px solid transparent !important;
+}
+
+
+
+/* nav-pills */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #848689;
+}
+
+.card-header .nav-pills .nav-link.active:hover {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link:hover {
+    color: #3e4045 !important;
+}
+
+/* Buttons */
+.btn-rounded {
+    display:block;
+    border-radius: 50%;
+}
+
+.btn-main {
+    background-color: #3e4045 !important;
+    color: #fff !important;
+}
+
+/* Card */
+.card {
+    border-radius: 0.50rem !important;
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.35);
+}
+
+.btn-block-rounded {
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+
+.my-flex-card > div > div.card {
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+}
